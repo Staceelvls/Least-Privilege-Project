@@ -50,10 +50,16 @@ I built an AWS Identity and Access Management policy to ensure a user could only
 ---
 ### 4. 🔗 Attach and Test the Policy
   I added the policy to the RestrictedUser and logged in to a separate browser session to test. The user was able to download the file from the bucket, but when the user tried to delete the file, the user received an "Access Denied" error, which was the intended result.
+  
 
+#### 📑The Policy
 
 <img src="images/addpermissionsafterpolicy.JPG" width="700" />
+
+#### ✔️I was successfully able to download the file inside the S3 bucket.
 <img src="images/success.JPG" width="700" />
+
+#### 🛑I was denied access when I tried to delete the file, as it is read-only.
 <img src="images/accessdenieddelete.JPG" width="700" />
 
 
