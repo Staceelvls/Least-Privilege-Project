@@ -37,53 +37,34 @@ I built an AWS Identity and Access Management policy to ensure a user could only
   I created a new IAM user (RestrictedUser) with a custom password.
 
 
-<img src="images/iamrole.JPG" width="800" />  
+<img src="images/createuser2.JPG" width="800" />  
 
 ---  
 ### 3. 📝 Obtain and Configure the Least Privilege Policy
   I used a JSON policy that included only read permissions on the t0p secret bucket, and a few extra permissions to allow the user to see the S3 console page.
 
 
-<img src="images/lambda.JPG" width="800" />
+<img src="images/policy2.JPG" width="700" />
+<img src="images/policy.JPG" width="700" />
 
 ---
 ### 4. 🔗 Attach and Test the Policy
   I added the policy to the RestrictedUser and logged in to a separate browser session to test. The user was able to download the file from the bucket, but when the user tried to delete the file, the user received an "Access Denied" error, which was the intended result.
 
 
-<img src="images/trigger.JPG" width="800" />
-
----
-### 5. File Upload (Input Bucket)
-  I uploaded a file named test.txt to the Input Bucket, which automatically starts the Lambda function.
-
-
-<img src="images/testscreenshot.JPG" width="800" />
+<img src="images/addpermissionsafterpolicy.JPG" width="700" />
+<img src="images/success.JPG" width="700" />
+<img src="images/accessdenieddelete.JPG" width="700" />
 
 
 
 ---
-### 6. MP3 Creation (Output Bucket)
-The Python code will read the text and pass it to Amazon Polly.
-Then Polly synthesizes the speech, and generates the .mp3 audio stream.
-The Lambda function saves the .mp3 file to the Output Bucket, where you can download and listen.
 
-
-<img src="images/textmp3.JPG" width="800" />
-
-
----
-### 7. Final Outcome
-
-  <img src="images/mp3player.JPG" width="400" />
-
-
-[**Click Here to Listen/Download the MP3 Sample**](https://github.com/Staceelvls/Text-2-Speech-Project/raw/refs/heads/main/images/test.mp3)
 
 </p>
 
 <h2>Goal:</h2>
-The goal of this project was to create a fully automated, serverless process on AWS that converts text into speech. This project demonstrates my knowledge in connecting cloud services (S3, Lambda, and Polly) to execute an event-driven file conversion pipeline.
+The primary goal of this project was to gain practical, hands-on experience in implementing the Principle of Least Privilege (PoLP). I aimed to demonstrate proficiency in using AWS Identity and Access Management (IAM) to create a policy that grants a user only the minimum permissions (read-only) required for a job, thereby confirming my ability to secure cloud resources against excessive or damaging actions.
 
 
 ---
