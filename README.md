@@ -4,7 +4,7 @@
 I created this project to demonstrate the idea of Least Privilege in the cloud.
 I've always found it easiest to think of Least Privilege like a hotel key card: the user only gets the specific permissions or access they need for their job. For example, a housekeeper gets a key to the rooms they clean, but never the master key or access to the hotel safe.
 I built an AWS Identity and Access Management policy to ensure a user could only read a file, but they would be blocked if they tried to delete the file.
-<br />
+<br /> 
 
 
 <h2>Languages and Utilities Used</h2>
