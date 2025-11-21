@@ -25,8 +25,13 @@ I built an AWS Identity and Access Management policy to ensure a user could only
 ### 1. ☁️ Setup S3 Buckets / Uploaded File
   I created a private S3 bucket and uploaded a file. I will be testing to make sure a user can download this file but not delete it based on the user permissions.
 
+  #### ✔️Bucket Created!
   
 <img src="images/createbucket.JPG" width="600" />
+
+
+#### ✔️File Uploaded
+
 <img src="images/upload2.JPG" width="700" />
   
 ---
