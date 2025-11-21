@@ -26,9 +26,7 @@ I built an AWS Identity and Access Management policy to ensure a user could only
   I created a private S3 bucket and uploaded a file. I will be testing to make sure a user can download this file but not delete it based on the user permissions.
 
   
-<img src="images/createbucket.JPG" width="700" />
-<img src="images/createbucket2.JPG" width="700" />
-<img src="images/upload.JPG" width="700" />
+<img src="images/createbucket.JPG" width="600" />
 <img src="images/upload2.JPG" width="700" />
   
 ---
@@ -37,7 +35,7 @@ I built an AWS Identity and Access Management policy to ensure a user could only
   I created a new IAM user (RestrictedUser) with a custom password.
 
 
-<img src="images/createuser2.JPG" width="800" />  
+<img src="images/createuser2.JPG" width="700" />  
 
 ---  
 ### 3. 📝 Obtain and Configure the Least Privilege Policy
@@ -71,7 +69,3 @@ I built an AWS Identity and Access Management policy to ensure a user could only
 
 <h2>Goal:</h2>
 The primary goal of this project was to gain practical, hands-on experience in implementing the Principle of Least Privilege (PoLP). I aimed to demonstrate proficiency in using AWS Identity and Access Management (IAM) to create a policy that grants a user only the minimum permissions (read-only) required for a job, thereby confirming my ability to secure cloud resources against excessive or damaging actions.
-
-
----
-
